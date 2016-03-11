@@ -5,6 +5,7 @@
 
 .nav-item {
   color: $brand-light-gray;
+  font-size: 0.8rem;
 
   &__icon {
     margin: 0.5rem;
@@ -18,10 +19,25 @@
   }
 
   &__name {
+    margin: 0;
     color: $brand-white;
   }
 
   &__desc {
     margin: 0.3rem;
   }
+
+  &__right {
+    margin: 0 $gutter;
+
+    &:hover {
+      color: $brand-red;
+      cursor: pointer;
+    }
+  }
+}
+
+.top-right-nav {
+  display: flex;
+  align-items: center;
 }
