@@ -3,6 +3,11 @@
   align-items: center;
 }
 
+.top-right-nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav-item {
   color: $brand-light-gray;
   font-size: 0.8rem;
@@ -35,9 +40,4 @@
       cursor: pointer;
     }
   }
-}
-
-.top-right-nav {
-  display: flex;
-  align-items: center;
 }
