@@ -1,0 +1,27 @@
+.top-left-nav {
+  display: flex;
+  align-items: center;
+}
+
+.nav-item {
+  color: $brand-light-gray;
+
+  &__icon {
+    margin: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  &__divider {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+
+  &__name {
+    color: $brand-white;
+  }
+
+  &__desc {
+    margin: 0.3rem;
+  }
+}
