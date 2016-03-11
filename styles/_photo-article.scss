@@ -1,16 +1,70 @@
 .photo-article {
-  width: 70%;
-  background: green;
+  display: flex;
+
+  width: 65vw;
+  margin-left: 25vw;
+
+  color: $brand-light-gray;
+  max-width: $max-content-width;
+
+
 }
 
 .photo-info {
-  width: 100%;
+  flex-grow: 2;
+
+  &__overlay {
+    @extend %inkwell;
+  }
 
   &__img {
-    width: 100%;
+    // width: 100%;
+    max-height: 400px;
   }
 
-  &__pic {
-    // width: 100%;
+  &__desc {
+    display: flex;
+    align-items: center;
+    margin: .5rem 0;
+
+    &--title {
+      font-size: 1.5rem;
+      color: $brand-white;
+      font-weight: bold;
+    }
+
+    &--date-stamp {
+      margin-left: 1rem;
+    }
+
   }
+}
+
+.photo-details {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 0 $gutter;
+
+
+  &__item {
+    display: flex;
+    align-items: center;
+    margin: 0;
+
+  }
+
+  &__text {
+    margin: 1rem 0.5rem;
+
+    &--red {
+      margin: 0 0.5rem;
+      color: $brand-red;
+    }
+
+    &--last {
+      margin: 1rem;
+    }
+  }
+
+
 }
