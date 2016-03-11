@@ -1,0 +1,16 @@
+.photo-article {
+  width: 70%;
+  background: green;
+}
+
+.photo-info {
+  width: 100%;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__pic {
+    // width: 100%;
+  }
+}
