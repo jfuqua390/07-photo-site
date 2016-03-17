@@ -1,11 +1,13 @@
 .top-left-nav {
   display: flex;
   align-items: center;
+  margin-left: $gutter;
 }
 
 .top-right-nav {
   display: flex;
   align-items: center;
+  margin-right: $gutter;
 }
 
 .nav-item {
@@ -33,11 +35,15 @@
   }
 
   &__right {
-    margin: 0 $gutter;
+    margin: 0 0.5rem;
 
     &:hover {
       color: $brand-red;
       cursor: pointer;
     }
   }
+}
+
+.dropdown {
+  display: none;
 }

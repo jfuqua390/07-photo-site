@@ -15,14 +15,16 @@
   &__avatar-pic {
     width: 100%;
     border-radius: 40%;
+    -webkit-filter: contrast(140%) opacity(20%);
   }
 
   &__triangle {
     position: absolute;
-    right: 38%;
-    bottom: 4.5rem;
-    font-size: 4rem;
+    right: 35%;
+    bottom: 3.3rem;
     color: $brand-red;
+    font-size: 4rem;
+    transform: rotate(45deg);
   }
 
   &__title {
