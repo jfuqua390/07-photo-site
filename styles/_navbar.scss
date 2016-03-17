@@ -1,0 +1,49 @@
+.top-left-nav {
+  display: flex;
+  align-items: center;
+  margin-left: $gutter;
+}
+
+.top-right-nav {
+  display: flex;
+  align-items: center;
+  margin-right: $gutter;
+}
+
+.nav-item {
+  color: $brand-light-gray;
+  font-size: 0.8rem;
+
+  &__icon {
+    margin: 0.5rem;
+    font-size: 1.1rem;
+  }
+
+  &__divider {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: lighter;
+  }
+
+  &__name {
+    margin: 0;
+    color: $brand-white;
+  }
+
+  &__desc {
+    margin: 0.3rem;
+  }
+
+  &__right {
+    margin: 0 0.5rem;
+
+    &:hover {
+      color: $brand-red;
+      cursor: pointer;
+    }
+  }
+}
+
+.dropdown {
+  display: none;
+}

@@ -1,6 +1,92 @@
 // @import 'yoga';
 // @import 'normalize';
 
-// $fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
-// @import 'font-awesome';
+$fa-font-path: '//netdna.bootstrapcdn.com/font-awesome/4.3.0/fonts';
+@import 'font-awesome';
+@import 'cssgram';
 @import 'box-sizing';
+@import 'variables';
+@import 'grid';
+@import 'navbar';
+@import 'base';
+
+@import 'logo';
+@import 'photo-article';
+@import 'footer';
+
+
+@media (max-width: 1000px) {
+  .photo-article {
+    display: flex;
+    flex-direction: column;
+    margin: $gutter 0;
+    color: $brand-light-gray;
+  }
+
+  .photo-article__column {
+    width: 100%;
+    margin: 0;
+  }
+
+  .photo-details {
+    margin: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  .top-right-nav {
+    display: none;
+  }
+
+  .dropdown {
+    display: block;
+    position: relative;
+    top: 1rem;
+    right: 2rem;
+    color: $brand-light-gray;
+
+    &:hover {
+      cursor: pointer;
+
+      .dropdown-options {
+        display: block;
+      }
+    }
+  }
+
+  .dropdown-options {
+    display: none;
+    position: absolute;
+    top: 2rem;
+    right: 0;
+    font-size: 1rem;
+  }
+
+  .dropdown-options__item {
+
+    &:hover {
+      color: $brand-red;
+    }
+  }
+
+  .dropdown--icon {
+    color: $brand-light-gray;
+    font-size: 2rem;
+
+    &:hover {
+      color: $brand-red;
+    }
+  }
+
+  .footer-row {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  .footer-article {
+    width: 60%;
+
+  }
+
+}

@@ -1,0 +1,39 @@
+.logo {
+  width: 10rem;
+  margin: 2rem auto;
+}
+
+.logo-item {
+  position: relative;
+  width: 100%;
+  margin: 0;
+
+  &__overlay {
+    @extend %inkwell;
+  }
+
+  &__avatar-pic {
+    width: 100%;
+    border-radius: 40%;
+    -webkit-filter: contrast(140%) opacity(20%);
+  }
+
+  &__triangle {
+    position: absolute;
+    right: 35%;
+    bottom: 3.3rem;
+    color: $brand-red;
+    font-size: 4rem;
+    transform: rotate(45deg);
+  }
+
+  &__title {
+    position: absolute;
+    top: -0.6em;
+    right: 10%;
+    margin: 0;
+    color: $brand-white;
+    text-align: center;
+
+  }
+}
